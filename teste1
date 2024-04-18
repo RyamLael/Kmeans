@@ -1,0 +1,16 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+import math
+
+fig, ax = plt.subplots()
+
+x = range(1,50)
+y = [math.log2(y) for y in x]
+
+for i in x:
+    ax = plt.plot((x[:i]), y[:i], lw =5)
+
+    plt.xlim = (1,50)
+
+plt.show()
